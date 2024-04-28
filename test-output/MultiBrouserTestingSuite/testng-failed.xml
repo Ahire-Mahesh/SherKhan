@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultiBrouserTestingSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="BrowserName" value="firefox"/>
+    <classes>
+      <class name="com.khanAcademy.TestPackage.TC02_LogoutFunctionality">
+        <methods>
+          <include name="verifyTheLogoutFunctionality"/>
+          <include name="setUp"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- com.khanAcademy.TestPackage.TC02_LogoutFunctionality -->
+      <class name="com.khanAcademy.TestPackage.TC03_DragAndDropFunctionality">
+        <methods>
+          <include name="verifyTheDragAndDropFunctionality"/>
+          <include name="setUp"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- com.khanAcademy.TestPackage.TC03_DragAndDropFunctionality -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [MultiBrouserTestingSuite] -->

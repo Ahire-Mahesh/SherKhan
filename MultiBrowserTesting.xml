@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MultiBrouserTestingSuite">
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="BrowserName" value="chrome"></parameter>
+    <classes>
+      <class name="com.khanAcademy.TestPackage.TC01_LoginFunctionality"/>
+      <class name="com.khanAcademy.TestPackage.TC02_LogoutFunctionality"/>
+      <class name="com.khanAcademy.TestPackage.TC03_DragAndDropFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="FirefoxTest">
+  <parameter name="BrowserName" value="firefox"></parameter>
+    <classes>
+      <class name="com.khanAcademy.TestPackage.TC01_LoginFunctionality"/>
+      <class name="com.khanAcademy.TestPackage.TC02_LogoutFunctionality"/>
+      <class name="com.khanAcademy.TestPackage.TC03_DragAndDropFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
